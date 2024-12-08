@@ -1,0 +1,69 @@
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+
+/* Sección de búsqueda */
+.search-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Etiquetas de búsqueda */
+.search-container label {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* Hover en el botón */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor de resultados */
+#results-container {
+    margin-top: 20px;
+}
+
+.resultado {
+    color: black; /* Cambia el color del texto a negro */
+    background-color: white; /* Fondo blanco opcional */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del título y de la oferta especial */
+.resultado h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.resultado .oferta {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 600px) {
+    input[type="text"], input[type="date"] {
+        width: 100%;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

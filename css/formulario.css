@@ -1,0 +1,104 @@
+/* Contacto */
+.formulario {
+    scroll-snap-align: center;
+    /* Alinea en el centro de la pantalla */
+
+    width: min(300px, 100%);
+    /* Utilizar el valor más pequeño */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+    padding: 20px;
+    /* Espaciado interno */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+.formulario fieldset {
+    border: none;
+    /* Sin borde */
+    scroll-snap-align: center;
+    /* Alinea en el centro de la pantalla */
+
+}
+
+.formulario legend {
+    text-align: center;
+    /* Texto centrado */
+    font-size: 18px;
+    /* Tamaño de la fuente */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    font-weight: 700;
+    /* Fuente en negrita */
+    margin-bottom: 20px;
+    /* Espaciado inferior */
+    color: var(--primario);
+    /* Color primario */
+
+}
+
+/* Media query para pantallas con un ancho mínimo de 768px */
+@media (min-width: 768px) {
+
+    /* Contenedor de campos para formularios */
+    .contenedor-campos {
+        display: grid;
+        /* Usar grid layout */
+        grid-template-columns: 50% 50%;
+        /* Dos columnas de igual tamaño */
+        grid-template-rows: auto auto 200px;
+        /* Filas automáticas, la última fila con altura fija */
+        column-gap: 10px;
+        /* Espacio entre columnas */
+
+    }
+
+    /* Selección de los tercer y cuarto elementos hijos directos del contenedor */
+    .campo:nth-child(3),
+    .campo:nth-child(4) {
+        grid-column: 1 / 3;
+        /* Ocupan ambas columnas del grid */
+    }
+}
+
+/* Estilos para cada campo del formulario */
+.campo {
+    margin-bottom: 10px;
+    /* Espacio inferior de 1rem */
+}
+
+/* Estilos para las etiquetas dentro de cada campo */
+.campo label {
+    color: var(--blanco);
+    /* Color de texto blanco */
+    font-weight: bold;
+    /* Texto en negrita */
+    margin-bottom: .50px;
+    /* Espacio inferior de 0.5rem */
+    display: block;
+    /* Mostrar como bloque */
+}
+
+/* Estilos para los campos de texto */
+.campo textarea {
+    height: 200px;
+    /* Altura fija de 20rem */
+}
+
+/* Estilos para los campos de entrada de texto */
+.input-text {
+    width: 100%;
+    /* Anchura completa */
+    border: none;
+    /* Sin borde */
+    padding: 15px;
+    /* Espacio interior de 1.5rem */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+/* Estilos para el pie de página */
+.footer {
+    text-align: center;
+    /* Texto centrado */
+}

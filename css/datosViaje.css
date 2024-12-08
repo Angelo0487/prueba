@@ -1,0 +1,45 @@
+/* Sección de datos del viaje registrado */
+#datos-viaje {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 20px;
+    color: #fff; /* Color del texto */
+}
+
+/* Estilo del título de la sección */
+#datos-viaje h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Color del título */
+}
+
+/* Estilo de los párrafos de datos */
+#datos-viaje p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* Estilo de los datos destacados */
+#datos-viaje p strong {
+    color: #ffcc00; /* Color de los datos destacados */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    #datos-viaje {
+        padding: 10px;
+    }
+
+    #datos-viaje h2 {
+        font-size: 1.2rem;
+    }
+
+    #datos-viaje p {
+        font-size: 1rem;
+    }
+}

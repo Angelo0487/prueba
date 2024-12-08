@@ -1,0 +1,150 @@
+/* Estilos generales para todos los elementos */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url();/* Imagen de fondo */
+    background-size: cover; /* La imagen cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    color: #fff; /* Color del texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Encabezado de la página */
+.header-center {
+    text-align: center; /* Centrar el texto */
+    padding-top: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(0, 123, 255, 0.7); /* Fondo semitransparente */
+    color: #fff;
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    margin: 0 auto; /* Centrar el encabezado */
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* Contenedor principal de contenido */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 800px; /* Ancho máximo del contenedor */
+    padding: 20px;
+/*    background-color: rgba(255, 255, 255, 0.5); /* Fondo más transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 0 auto; /* Centrar el contenedor principal */
+}
+
+/* Sección de búsqueda */
+.search-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Etiquetas de búsqueda */
+.search-container label {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* Estilos de los campos de entrada de texto y fecha */
+input[type="text"], input[type="date"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo del botón */
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover en el botón */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor de resultados */
+#results-container {
+    margin-top: 20px;
+}
+
+.resultado {
+    color: black; /* Cambia el color del texto a negro */
+    background-color: white; /* Fondo blanco opcional */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del título y de la oferta especial */
+.resultado h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.resultado .oferta {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+/* Enlaces del pie de página */
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 600px) {
+    input[type="text"], input[type="date"] {
+        width: 100%;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
