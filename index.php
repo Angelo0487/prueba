@@ -15,7 +15,7 @@ if (!isset($_SESSION['email'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Incluye las hojas de estilos -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/index.css">
     <title>Registro de Viaje</title>
 </head>
 
