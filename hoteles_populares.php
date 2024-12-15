@@ -1,6 +1,6 @@
 <?php
 include 'conexion.php';
-
+require 'sesion.php';
 try {
     // Consulta avanzada: contar reservas por hotel
     $sql = "SELECT HOTEL.nombre, COUNT(RESERVA.id_reserva) AS total_reservas
