@@ -1,13 +1,11 @@
 <?php
 // Inicia la sesión
 session_start();
-
 // Establece un mensaje de bienvenida personalizado si el usuario está conectado
 if (!isset($_SESSION['email'])) {
     $_SESSION['email'] = 'Visitante'; // Usuario por defecto si no se ha iniciado sesión
 }// Establece un mensaje de bienvenida personalizado si el usuario está conectado
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 
