@@ -1,6 +1,9 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
+    background-image: url('/img/palmera.jpg'); /* Imagen de fondo */
+    background-size: cover; /* La imagen cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
