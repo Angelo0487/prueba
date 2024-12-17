@@ -1,6 +1,6 @@
 <?php
 include 'conexion.php';
-
+require 'sesion.php';
 try {
     // Consulta para insertar reservas
     $sql = "INSERT INTO RESERVA (id_cliente, fecha_reserva, id_vuelo, id_hotel)

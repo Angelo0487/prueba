@@ -1,6 +1,6 @@
 <?php
 include 'conexion.php';
-
+require 'sesion.php';
 echo "<h1>Hoteles Registrados</h1>";
 $sql_hoteles = "SELECT * FROM HOTEL";
 $hoteles = $conn->query($sql_hoteles)->fetchAll(PDO::FETCH_ASSOC);

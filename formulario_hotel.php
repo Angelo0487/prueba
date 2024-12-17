@@ -7,6 +7,9 @@ require 'sesion.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Incluye las hojas de estilos -->
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/styles1.css">
     <title>Registrar Hotel</title>
 </head>
 
